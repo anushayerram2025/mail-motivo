@@ -74,13 +74,13 @@ request.end();
 })
 var nodemailer = require('nodemailer');
 
-var transporter = nodemailer.createTransport({
+/*var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'youremail@gmail.com',
     pass: 'yourpassword'
   }
-});
+});*/
 
 /*var mailOptions = {
   from: 'youremail@gmail.com',
@@ -148,8 +148,3 @@ transporter.sendMail(mailOptions, function(error, info){
 })
 })
 }
-//api key
-//81fd75360841e98f6bc454df6b8ba65e-us14
-
-//list id
-//fb0c4ae101
