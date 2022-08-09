@@ -1,0 +1,15 @@
+.result{
+  background-color:#A5C9CA;
+padding: 0;
+margin: 0;
+display: inline-block;
+width:1600px;
+text-align:left;
+padding-left: 50px;
+padding-top:50px;
+padding-bottom:50px;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
