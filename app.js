@@ -39,7 +39,7 @@ app.post("/",function(req,res){
   //https.get(url,function()) ...this is useful to get data from the url not for hosting the data at the url location.
   const jasonData=JSON.stringify(data);
   id_key=process.env.id;
-  const aut="anusha:"+id_key;
+  const aut=id_key;
   const url="https://us14.api.mailchimp.com/3.0/lists/fb0c4ae101";
   const options={
     method:"POST",
