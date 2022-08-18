@@ -97,7 +97,7 @@ var transporter = nodemailer.createTransport({
 });
 
 
-var today = new Date().toLocaleTimeString("en-Us", {timeZone: 'Asia/Kolkata',hour12:false});
+/*var today = new Date().toLocaleTimeString("en-Us", {timeZone: 'Asia/Kolkata',hour12:false});
 if (today=="07:00:00" || today=="7:00:00"){
 https.get("https://zenquotes.io/api/random",function(response){
   response.on("data",function(data){
@@ -122,7 +122,7 @@ transporter.sendMail(mailOptions, function(error, info){
   if (error) {
     console.log(error);
   }
-});
+});*/
 }
 })
 })
