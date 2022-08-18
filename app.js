@@ -74,7 +74,7 @@ response.on("data",function(data){
 request.write(jasonData);
 request.end();
 })
-var nodemailer = require('nodemailer');
+/*var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -82,7 +82,7 @@ var transporter = nodemailer.createTransport({
     user: 'youremail@gmail.com',
     pass: 'yourpassword'
   }
-});
+});*/
 
 
 
