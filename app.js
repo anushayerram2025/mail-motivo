@@ -1,10 +1,9 @@
 const express=require("express");
 const bodyParser=require("body-parser");
-//const request=require("request");
 const https=require("https");
 const app=express();
 const my_email = "yerramanusha8@gmail.com"
-const    password = "sramyeyjffcvsrud"
+const password = "sramyeyjffcvsrud"
 require("dotenv").config();
 app.listen(process.env.PORT||3000,function(){
   console.log("The server has been started");
@@ -74,57 +73,3 @@ response.on("data",function(data){
 request.write(jasonData);
 request.end();
 })
-/*var nodemailer = require('nodemailer');
-
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'youremail@gmail.com',
-    pass: 'yourpassword'
-  }
-});*/
-
-
-
-var nodemailer = require('nodemailer');
-
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: my_email,
-    pass: password
-  }
-});
-
-
-/*var today = new Date().toLocaleTimeString("en-Us", {timeZone: 'Asia/Kolkata',hour12:false});
-if (today=="07:00:00" || today=="7:00:00"){
-https.get("https://zenquotes.io/api/random",function(response){
-  response.on("data",function(data){
-    const quote=JSON.parse(data)[0].q;
-    const author=JSON.parse(data)[0].a;
-    if (author!="Unknown"){
-    var text=quote
-  }
-  else{
-    text=quote+" - "+author
-  }
-const arr=["ayerram@gitam.in","yerramanusha8@gmail.com"];
-for(var i=0;i<arr.length;i++){
-var mailOptions = {
-  from: my_email,
-  to: arr[i],
-  subject:"Motivo!!" ,
-  text: text
-};
-
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  }
-});*/
-}
-})
-})
-}
-
