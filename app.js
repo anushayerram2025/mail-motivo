@@ -41,7 +41,7 @@ res.sendFile(__dirname+"/success.html")
 var mailOptions = {
   from: my_email,
   to: my_email,
-  subject:"New login!!!!" ,
+  subject:"New login in Motivo!!!!" ,
   text: email
 };
 let transporter = nodemailer.createTransport({
